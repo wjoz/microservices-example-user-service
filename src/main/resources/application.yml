@@ -1,0 +1,14 @@
+# Specifies the User Service (node) name
+spring:
+  application:
+    name: user-service
+
+# The port number that the micro service will bind to
+server:
+  port: 2222
+
+# We need to specify the service discovery (Eureka) URL so that the User Service micro service can register there.
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka
